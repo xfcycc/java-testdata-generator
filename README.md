@@ -13,9 +13,16 @@ Java实现的各种随机测试数据生成器，包括身份证号码，银行�
 --------------------
 Maven 引用方式
 ```
-<dependency>
-    <groupId>com.github.binarywang</groupId>
-    <artifactId>java-testdata-generator</artifactId>
-    <version>1.1.2</version>
-</dependency>
+
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>java-testdata-generator</artifactId>
+            <version>1.1.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 ````
